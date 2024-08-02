@@ -652,8 +652,8 @@ video {
   height: 10rem;
 }
 
-.h-\[40vh\] {
-  height: 40vh;
+.h-\[18vh\] {
+  height: 18vh;
 }
 
 .h-auto {
@@ -662,30 +662,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[30vh\] {
-  height: 30vh;
-}
-
-.h-\[10vh\] {
-  height: 10vh;
-}
-
-.h-\[20vh\] {
-  height: 20vh;
-}
-
-.h-\[15vh\] {
-  height: 15vh;
-}
-
-.h-\[18vh\] {
-  height: 18vh;
-}
-
-.h-\[17vh\] {
-  height: 17vh;
 }
 
 .w-40 {
@@ -756,6 +732,10 @@ video {
   overflow: hidden;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -777,11 +757,6 @@ video {
 .bg-purple-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(88 28 135 / var(--tw-bg-opacity));
-}
-
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -825,22 +800,8 @@ video {
   padding-bottom: 6rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .pt-10 {
@@ -924,6 +885,14 @@ video {
   --tw-ring-offset-width: 4px;
 }
 
+.ring-offset-8 {
+  --tw-ring-offset-width: 8px;
+}
+
+.ring-offset-2 {
+  --tw-ring-offset-width: 2px;
+}
+
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -943,6 +912,12 @@ video {
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1035,3 +1010,6 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+
+  

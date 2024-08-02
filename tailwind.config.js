@@ -6,6 +6,7 @@ module.exports = {
       mukta: ['Mukta', 'serif'],
     },
     extend: {},
+    
   },
   plugins: [],
 };
