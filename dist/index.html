@@ -1,6 +1,5 @@
-
 <!doctype html>
-<html lang="en"class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,53 +11,85 @@
     />
     <link href="./output.css" rel="stylesheet" />
     <title>Jeta Hoxha</title>
+    <style>
+      /* Typing effect keyframes */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      .typing-demo {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #5543; /* Cursor */
+        animation:
+          typing 3s steps(40, end),
+          blink 0.75s step-end infinite;
+      }
+    </style>
   </head>
-  <header class="rounded-b-[100px] bg-white h-auto overflow-hidden" >
-    <nav class="container flex items-center p-8">
-      <ul
-        class="hidden sm:flex flex-1 justify-end items-center gap-20 text-slate-700 text-md"
-      >
-        <li class="cursor-pointer hover:text-purple-800">
-          <a
-            href="https://drive.google.com/file/d/1Bo5qG6j55qfmhjvID5Q1lUugmisIhS0J/view?usp=sharing"
-            >CV</a
+  <body class="font-mukta">
+    <header class="rounded-b-[100px] bg-white h-auto overflow-hidden">
+      <nav class="container flex items-center p-8">
+        <ul
+          class="hidden sm:flex flex-1 justify-end items-center gap-20 text-slate-700 text-md"
+        >
+          <li class="cursor-pointer hover:text-purple-800">
+            <a
+              href="https://drive.google.com/file/d/1Bo5qG6j55qfmhjvID5Q1lUugmisIhS0J/view?usp=sharing"
+              >CV</a
+            >
+          </li>
+          <li class="cursor-pointer hover:text-purple-800">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="cursor-pointer hover:text-purple-800">
+            <a href="https://www.linkedin.com/in/jeta-hoxha-19b0a4222/"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="cursor-pointer hover:text-purple-800">
+            <a href="https://medium.com/@jetahoxha3">Medium</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="grid grid-rows-2 justify-center mx-auto">
+        <div class="flex justify-center mt-24 sm:pb-12">
+          <div
+            class="rounded-full ring ring-purple-900 ring-offset-2 w-40 h-40 overflow-hidden"
           >
-        </li>
-        <li class="cursor-pointer hover:text-purple-800" >
-          <a href="#section2">Skills</a>
-        </li>
-        <li class="cursor-pointer hover:text-purple-800">
-          <a href="https://www.linkedin.com/in/jeta-hoxha-19b0a4222/"
-            >LinkedIn</a
-          >
-        </li>
-        <li class="cursor-pointer hover:text-purple-800">
-          <a href="https://medium.com/@jetahoxha3">Medium</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="grid grid-rows-2 justify-center mx-auto">
-      <div class="flex justify-center mt-24 sm:pb-12">
-        <div
-          class="rounded-full ring ring-purple-900 ring-offset-2 w-40 h-40 overflow-hidden">
-          <img
-            src="https://github.com/jetahox/jetahoxha.com/blob/master/images/memoji2.png?raw=true"
-            alt=""
-            class="w-full h-full object-cover"
-          />
+            <img
+              src="https://github.com/jetahox/jetahoxha.com/blob/master/images/memoji2.png?raw=true"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
         </div>
-      </div>
-      <div class="flex justify-center sm:mt-0 ">
-        <div class="md:mx-40">
-          <h1 class="font-bold text-5xl sm:text-6xl text-center text-purple-950 overflow-hidden pt-10 sm:py-4" class="animated-text">
-            I'm Jeta, <br />
-            Junior FrontEnd Developer.
-          </h1>
+        <div class="flex justify-center sm:mt-0">
+          <div class="md:mx-40">
+            <h1
+              class="font-bold text-3xl md:text-6xl text-center text-purple-950 pt-10 sm:py-4"
+            >
+              <span class="typing-demo block sm:inline"
+                >I'm Jeta, Junior FrontEnd Developer.</span
+              >
+            </h1>
+          </div>
         </div>
       </div>
     </header>
-  <body class="font-mukta">
-  
+
     <div class="bg-white h-[18vh] sm:h-[40vh] relative">
       <img
         src="https://github.com/jetahox/jetahoxha.com/blob/master/images/hero.png?raw=true"
@@ -66,111 +97,100 @@
         class="w-[350px] sm:w-auto sm:h-[40vh] mx-auto relative z-10"
       />
     </div>
- 
-    
-  
-        <div class="bg-purple-900">
-        <div class="bg-purple-900 overflow-hidden h-auto" >
-          <div
-            class="container mx-auto my-10 flex flex-col justify-center items-center"
-          >
-            <h1
-              class="text-2xl sm:text-3xl text-white font-bold py-10 text-center mx-auto"
-            >
-              Hi, Nice to meet you.
-            </h1>
-            <div>
-              <p
-                class="text-center p-4 sm:pb-32 text-lg xl:mx-56 text-white mx-auto"
-              >
-                I'm passionate about creating engaging and intuitive web
-                experiences. With a solid foundation in HTML, CSS, and
-                JavaScript, I specialize in building responsive and visually
-                appealing websites. Currently, I'm seeking opportunities to grow
-                my skills and contribute to exciting projects. My focus is on
-                writing clean, efficient code and delivering high-quality,
-                user-centric solutions. I'm eager to collaborate and make a
-                positive impact in the world of web development.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div class="bg-white rounded-t-[100px] overflow-hidden h-auto"id="section2">
-          <!-- card components -->
-          <div
-            class="grid lg:grid-cols-3 gap-6 my-20 h-auto overflow-hidden mb-4 sm:mx-10 p-10 "
-          >
-            <!-- Card 1 -->
-            <div
-              class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300 "
-            >
-              <h1 class="text-center pb-4 text-2xl font-semibold">
-               HTML & CSS
-              </h1>
-
-            </div>
-            <!-- Card 2 -->
-            <div
-              class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
-            >
-              <h1 class="text-center pb-4 text-2xl font-semibold">
-               JavaScript
-              </h1>
-        
-            </div>
-            <!-- Card 3 -->
-            <div
-              class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
-            >
-              <h1 class="text-center pb-4 text-2xl font-semibold">
-               Frameworks
-              </h1>
-            </div>
-            <!-- Card 4 -->
-            <div
-              class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
-            >
-              <h1 class="text-center pb-4 text-2xl font-semibold">
-                Git & GitHub
-              </h1>
-            </div>
-            <div
-            class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
-          >
-            <h1 class="text-center pb-4 text-2xl font-semibold">
-             Responsive Design
-            </h1>
-          </div>
-          <div
-          class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
+    <div class="bg-purple-900">
+      <div class="bg-purple-900 overflow-hidden h-auto">
+        <div
+          class="container mx-auto my-10 flex flex-col justify-center items-center"
         >
-          <h1 class="text-center pb-4 text-2xl font-semibold">
-            Problem Solving
+          <h1
+            class="text-2xl sm:text-3xl text-white font-bold py-10 text-center mx-auto"
+          >
+            Hi, Nice to meet you.
           </h1>
-        </div>
-          </div>
+          <p
+            class="text-center p-4 sm:pb-32 text-lg xl:mx-56 text-white mx-auto"
+          >
+            I'm passionate about creating engaging and intuitive web
+            experiences. With a solid foundation in HTML, CSS, and JavaScript, I
+            specialize in building responsive and visually appealing websites.
+            Currently, I'm seeking opportunities to grow my skills and
+            contribute to exciting projects. My focus is on writing clean,
+            efficient code and delivering high-quality, user-centric solutions.
+            I'm eager to collaborate and make a positive impact in the world of
+            web development.
+          </p>
         </div>
       </div>
 
-      <div class="bg-white h-auto">
-        <div class="py-24 px-6 sm:px-10">
-          <div class="flex flex-col items-center text-center">
-            <h1 class="font-bold text-4xl text-slate-700 mx-4 sm:mx-20">
-              Interested in collaborating with me?
+      <div
+        class="bg-white rounded-t-[100px] overflow-hidden h-auto"
+        id="skills"
+      >
+        <div
+          class="grid lg:grid-cols-3 gap-6 my-20 h-auto overflow-hidden mb-4 sm:mx-10 p-10"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <h1 class="text-center pb-4 text-2xl font-semibold">HTML & CSS</h1>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <h1 class="text-center pb-4 text-2xl font-semibold">JavaScript</h1>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <h1 class="text-center pb-4 text-2xl font-semibold">Frameworks</h1>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <h1 class="text-center pb-4 text-2xl font-semibold">
+              Git & GitHub
             </h1>
-            <p class="mt-4 text-lg text-slate-600 max-w-xl">
-              I’m always open to discussing product design work or partnership
-              opportunities.
-            </p>
-            <div class="flex justify-center gap-4 mt-12">
-              <a
-                class="rounded-xl bg-purple-900 text-white w-40 p-4 flex justify-center items-center hover:bg-purple-800 transition-colors duration-300"
-                href="mailto:jetahoxha3@gmail.com"
-              >
-                Email Me
-              </a>
-            </div>
+          </div>
+          <div
+            class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <h1 class="text-center pb-4 text-2xl font-semibold">
+              Responsive Design
+            </h1>
+          </div>
+          <div
+            class="bg-purple-900 rounded-xl p-6 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <h1 class="text-center pb-4 text-2xl font-semibold">
+              Problem Solving
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white h-auto">
+      <div class="py-24 px-6 sm:px-10">
+        <div class="flex flex-col items-center text-center">
+          <h1 class="font-bold text-4xl text-slate-700 mx-4 sm:mx-20">
+            Interested in collaborating with me?
+          </h1>
+          <p class="mt-4 text-lg text-slate-600 max-w-xl">
+            I’m always open to discussing product design work or partnership
+            opportunities.
+          </p>
+          <div class="flex justify-center gap-4 mt-12">
+            <a
+              class="rounded-xl bg-purple-900 text-white w-40 p-4 flex justify-center items-center hover:bg-purple-800 transition-colors duration-300"
+              href="mailto:jetahoxha3@gmail.com"
+            >
+              Email Me
+            </a>
           </div>
         </div>
       </div>
