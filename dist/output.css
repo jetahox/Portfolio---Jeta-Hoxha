@@ -705,6 +705,10 @@ video {
   margin-right: 1rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1387,6 +1391,11 @@ video {
   .sm\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .sm\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
   .sm\:mt-0 {
