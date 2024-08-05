@@ -32,10 +32,29 @@
         display: inline-block;
         white-space: nowrap;
         overflow: hidden;
-        border-right: 2px solid #5543; /* Cursor */
+        border-right: 2px solid #333; /* Cursor */
         animation:
           typing 3s steps(40, end),
           blink 0.75s step-end infinite;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 640px) {
+        .typing-demo {
+          font-size: 2rem; /* Smaller font size on small screens */
+        }
+      }
+
+      @media (min-width: 641px) and (max-width: 1024px) {
+        .typing-demo {
+          font-size: 3rem; /* Medium font size on medium screens */
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .typing-demo {
+          font-size: 4rem; /* Larger font size on large screens */
+        }
       }
     </style>
   </head>
@@ -52,7 +71,7 @@
             >
           </li>
           <li class="cursor-pointer hover:text-purple-800">
-            <a href="#skills">Skills</a>
+            <a href="#section2">Skills</a>
           </li>
           <li class="cursor-pointer hover:text-purple-800">
             <a href="https://www.linkedin.com/in/jeta-hoxha-19b0a4222/"
@@ -79,9 +98,9 @@
         <div class="flex justify-center sm:mt-0">
           <div class="md:mx-40">
             <h1
-              class="font-bold text-3xl md:text-6xl text-center text-purple-950 pt-10 sm:py-4"
+              class="font-bold text-5xl sm:text-6xl text-center text-purple-950 pt-10 sm:py-4"
             >
-              <span class="typing-demo block sm:inline"
+              <span class="typing-demo"
                 >I'm Jeta, Junior FrontEnd Developer.</span
               >
             </h1>
@@ -125,7 +144,7 @@
 
       <div
         class="bg-white rounded-t-[100px] overflow-hidden h-auto"
-        id="skills"
+        id="section2"
       >
         <div
           class="grid lg:grid-cols-3 gap-6 my-20 h-auto overflow-hidden mb-4 sm:mx-10 p-10"
