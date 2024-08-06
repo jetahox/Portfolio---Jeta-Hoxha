@@ -32,28 +32,31 @@
         display: inline-block;
         white-space: nowrap;
         overflow: hidden;
-        border-right: 2px solid #333; /* Cursor */
+        /* border-right: 2px solid; Cursor */
         animation:
           typing 3s steps(40, end),
           blink 0.75s step-end infinite;
       }
 
-      /* Responsive adjustments */
-      @media (max-width: 640px) {
+      /* Media query for medium screens */
+      @media (min-width: 768px) and (max-width: 1024px) {
         .typing-demo {
-          font-size: 2rem; /* Smaller font size on small screens */
+          display: block;
+          width: 100%; /* Adjust width for each line */
+          animation: none; /* Disable animation for multi-line effect */
         }
-      }
 
-      @media (min-width: 641px) and (max-width: 1024px) {
-        .typing-demo {
-          font-size: 3rem; /* Medium font size on medium screens */
+        .typing-demo:first-line {
+          animation:
+            typing 3s steps(40, end),
+            blink 0.75s step-end infinite;
         }
-      }
 
-      @media (min-width: 1025px) {
-        .typing-demo {
-          font-size: 4rem; /* Larger font size on large screens */
+        .typing-demo:last-line {
+          animation:
+            typing 3s steps(40, end) 3s,
+            blink 0.75s step-end infinite;
+          display: block;
         }
       }
     </style>
@@ -71,7 +74,7 @@
             >
           </li>
           <li class="cursor-pointer hover:text-purple-800">
-            <a href="#section2">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li class="cursor-pointer hover:text-purple-800">
             <a href="https://www.linkedin.com/in/jeta-hoxha-19b0a4222/"
@@ -98,11 +101,13 @@
         <div class="flex justify-center sm:mt-0">
           <div class="md:mx-40">
             <h1
-              class="font-bold text-5xl sm:text-6xl text-center text-purple-950 pt-10 sm:py-4"
+              class="font-bold text-3xl md:text-6xl text-center text-purple-950 pt-10 sm:py-4"
             >
-              <span class="typing-demo"
-                >I'm Jeta, Junior FrontEnd Developer.</span
-              >
+              <span class="typing-demo">
+                I'm Jeta,
+                <br />
+                Junior FrontEnd Developer.
+              </span>
             </h1>
           </div>
         </div>
@@ -144,7 +149,7 @@
 
       <div
         class="bg-white rounded-t-[100px] overflow-hidden h-auto"
-        id="section2"
+        id="skills"
       >
         <div
           class="grid lg:grid-cols-3 gap-6 my-20 h-auto overflow-hidden mb-4 sm:mx-10 p-10"
