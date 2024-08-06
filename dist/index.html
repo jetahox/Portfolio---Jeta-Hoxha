@@ -59,13 +59,47 @@
           display: block;
         }
       }
+
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+      }
+
+      .hamburger div {
+        width: 100%;
+        height: 3px;
+        background-color: #580260;
+      }
+
+      @media (max-width: 640px) {
+        .hamburger {
+          display: flex;
+        }
+        .nav-menu {
+          display: none;
+        }
+        .nav-menu.active {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+        }
+      }
     </style>
   </head>
   <body class="font-mukta">
     <header class="rounded-b-[100px] bg-white h-auto overflow-hidden">
       <nav class="container flex items-center p-8">
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <ul
-          class="hidden sm:flex flex-1 justify-end items-center gap-20 text-slate-700 text-md"
+          class="nav-menu hidden sm:flex flex-1 justify-end items-center gap-20 text-slate-700 text-md"
         >
           <li class="cursor-pointer hover:text-purple-800">
             <a
@@ -219,5 +253,7 @@
         </div>
       </div>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
